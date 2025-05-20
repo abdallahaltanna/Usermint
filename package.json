@@ -11,8 +11,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.0",
+    "@tanstack/react-query": "^5.76.1",
+    "axios": "^1.9.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
@@ -20,6 +26,8 @@
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react-swc": "^3.9.0",
     "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
@@ -32,7 +40,7 @@
     "vite": "^6.3.5"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,html,css,json}": "prettier --write",
+    "src/**/*.{js,jsx,ts,tsx,html.css}": "prettier",
     "src/**/*.{js,jsx,ts,tsx}": "eslint"
   }
 }

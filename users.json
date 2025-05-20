@@ -1,0 +1,122 @@
+[
+  {
+    "username": "jdoe",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "jdoe@example.com"
+  },
+  {
+    "username": "asmith",
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "email": "asmith@example.com"
+  },
+  {
+    "username": "bjohnson",
+    "firstName": "Bob",
+    "lastName": "Johnson",
+    "email": "bjohnson@example.com"
+  },
+  {
+    "username": "cliu",
+    "firstName": "Cindy",
+    "lastName": "Liu",
+    "email": "cliu@example.com"
+  },
+  {
+    "username": "dpatel",
+    "firstName": "Dev",
+    "lastName": "Patel",
+    "email": "dpatel@example.com"
+  },
+  {
+    "username": "eharris",
+    "firstName": "Eli",
+    "lastName": "Harris",
+    "email": "eharris@example.com"
+  },
+  {
+    "username": "fchen",
+    "firstName": "Fiona",
+    "lastName": "Chen",
+    "email": "fchen@example.com"
+  },
+  {
+    "username": "ggarcia",
+    "firstName": "Gabriel",
+    "lastName": "Garcia",
+    "email": "ggarcia@example.com"
+  },
+  {
+    "username": "hmiller",
+    "firstName": "Hannah",
+    "lastName": "Miller",
+    "email": "hmiller@example.com"
+  },
+  {
+    "username": "ikhan",
+    "firstName": "Imran",
+    "lastName": "Khan",
+    "email": "ikhan@example.com"
+  },
+  {
+    "username": "jwilson",
+    "firstName": "Julia",
+    "lastName": "Wilson",
+    "email": "jwilson@example.com"
+  },
+  {
+    "username": "kmartinez",
+    "firstName": "Kevin",
+    "lastName": "Martinez",
+    "email": "kmartinez@example.com"
+  },
+  {
+    "username": "lrodriguez",
+    "firstName": "Laura",
+    "lastName": "Rodriguez",
+    "email": "lrodriguez@example.com"
+  },
+  {
+    "username": "mthompson",
+    "firstName": "Mark",
+    "lastName": "Thompson",
+    "email": "mthompson@example.com"
+  },
+  {
+    "username": "nlewis",
+    "firstName": "Natalie",
+    "lastName": "Lewis",
+    "email": "nlewis@example.com"
+  },
+  {
+    "username": "operez",
+    "firstName": "Oscar",
+    "lastName": "Perez",
+    "email": "operez@example.com"
+  },
+  {
+    "username": "pramos",
+    "firstName": "Paula",
+    "lastName": "Ramos",
+    "email": "pramos@example.com"
+  },
+  {
+    "username": "qlee",
+    "firstName": "Quinn",
+    "lastName": "Lee",
+    "email": "qlee@example.com"
+  },
+  {
+    "username": "rwhite",
+    "firstName": "Rachel",
+    "lastName": "White",
+    "email": "rwhite@example.com"
+  },
+  {
+    "username": "snguyen",
+    "firstName": "Sam",
+    "lastName": "Nguyen",
+    "email": "snguyen@example.com"
+  }
+]
