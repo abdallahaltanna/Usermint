@@ -7,5 +7,31 @@
 }
 
 body {
-  height: 100vh;
+  padding: 50px 0;
+  background-color: #f8f9fb;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.main-header-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+@media (min-width: 992px) {
+  .main-header {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px) {
+  .Toastify__toast {
+    width: 90%;
+  }
 }
