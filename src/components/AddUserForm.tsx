@@ -37,6 +37,7 @@ const AddUserForm: FC<AddFormProps> = ({ handleClose }) => {
       <Stack spacing={2}>
         <TextField
           label="Username"
+          data-test="username"
           {...register('username')}
           error={!!errors.username}
           helperText={errors.username?.message}
@@ -44,18 +45,21 @@ const AddUserForm: FC<AddFormProps> = ({ handleClose }) => {
         <TextField
           label="First Name"
           {...register('firstName')}
+          data-test="firstname"
           error={!!errors.firstName}
           helperText={errors.firstName?.message}
         />
         <TextField
           label="Last Name"
           {...register('lastName')}
+          data-test="lastname"
           error={!!errors.lastName}
           helperText={errors.lastName?.message}
         />
         <TextField
           label="Email"
           {...register('email')}
+          data-test="email"
           error={!!errors.email}
           helperText={errors.email?.message}
         />
@@ -63,7 +67,11 @@ const AddUserForm: FC<AddFormProps> = ({ handleClose }) => {
           <Button variant="outlined" onClick={handleClose}>
             Cancel
           </Button>
-          <Button type="submit" variant="contained">
+          <Button
+            type="submit"
+            variant="contained"
+            data-test="add-user-modal-btn"
+          >
             Add
           </Button>
         </Stack>
