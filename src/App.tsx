@@ -52,11 +52,16 @@ function App() {
               variant="outlined"
               onClick={() => generateUser()}
               disabled={isPending}
+              data-test="generate-user-btn"
             >
               <Speed style={{ marginInlineEnd: '5px' }} />
               Generate
             </Button>
-            <Button variant="contained" onClick={handleOpen}>
+            <Button
+              variant="contained"
+              onClick={handleOpen}
+              data-test="add-user-home-btn"
+            >
               <Add style={{ marginInlineEnd: '5px' }} />
               Add User
             </Button>

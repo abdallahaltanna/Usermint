@@ -23,6 +23,7 @@ const BasicModal: FC<ModalProps> = ({ open, setOpen }) => {
 
   return (
     <Modal
+      data-test="modal"
       aria-labelledby="transition-modal-title"
       aria-describedby="transition-modal-description"
       open={open}
