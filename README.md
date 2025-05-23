@@ -2,6 +2,12 @@
 
 A simple React + TypeScript application that allows users to view, add, and generate random users using a clean UI built with MUI and powered by Zustand, Axios and React Query.
 
+## 🌐 Live Demo
+
+You can view the deployed project here:
+
+🔗 [Usermint](https://usermint.netlify.app/)
+
 ---
 
 ## ⚙️ Environment Variables
