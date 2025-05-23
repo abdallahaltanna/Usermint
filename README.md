@@ -1,54 +1,148 @@
-# React + TypeScript + Vite
+# User Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + TypeScript application that allows users to view, add, and generate random users using a clean UI built with MUI and powered by Zustand, Axios and React Query.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Environment Variables
 
-## Expanding the ESLint configuration
+This project uses a `.env` file to configure environment-specific variables.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🔧 Create a `.env` file and add this variable to it:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+VITE_API_URL= "API_Base_Url"
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 How to Run the Project Locally
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 1. Clone the repository
+
+```
+git clone https://github.com/abdallahaltanna/Usermint.git
+
+cd Usermint
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Run the app
+
+```
+npm run dev
+```
+
+> The app will run on `http://localhost:5173` by default (Vite).
+
+---
+
+## 🧪 Running Cypress Tests
+
+### Run the app
+
+```
+npm run dev
+```
+
+### Run Cypress in interactive mode
+
+```
+npx cypress open
+```
+
+---
+
+## 💡 Thought Process
+
+The goal was to build a clean, scalable user management system using modern tools with the following priorities:
+
+- ✅ Modular component design
+- ✅ Simple global state via Zustand
+- ✅ Data fetching handled cleanly via React Query and Axios
+- ✅ Form validation using React Hook Form + Yup
+- ✅ Responsive and accessible UI with MUI
+- ✅ Fully testable with Cypress
+
+---
+
+## 🧰 Tools & Libraries Used
+
+| Tool / Library        | Reason                                           |
+| --------------------- | ------------------------------------------------ |
+| **React**             | Modern UI framework                              |
+| **TypeScript**        | Static typing and DX improvements                |
+| **Vite**              | Lightning-fast build tool                        |
+| **Zustand**           | Minimal, scalable state management               |
+| **React Query**       | Caching and data synchronization                 |
+| **Axios**             | Promise-based HTTP client for API requests       |
+| **MUI (Material UI)** | Pre-styled, accessible component library         |
+| **React Hook Form**   | Lightweight forms with native validation         |
+| **Yup**               | Declarative schema-based validation              |
+| **Cypress**           | End-to-end testing with strong community support |
+| **React Toastify**    | Quick toast notifications with a nice UX         |
+
+### 🛠️ Dev & Code Quality Tools
+
+| Tool / Library  | Purpose                                                      |
+| --------------- | ------------------------------------------------------------ |
+| **ESLint**      | Linting JavaScript/TypeScript code for style and correctness |
+| **Prettier**    | Auto-formatting code to maintain consistency                 |
+| **Husky**       | Git hooks for pre-commit enforcement                         |
+| **Lint-Staged** | Runs linters on staged Git files                             |
+
+---
+
+## 🔧 Improvements If I Had More Time
+
+- ✅ Add **pagination** or **infinite scrolling**
+- ✅ Add **edit/delete** functionality for users
+- ✅ Integrate with a real **backend API** (e.g. Firebase, Supabase)
+- ✅ Add **error boundary** for better fallback UX
+- ✅ Add **GitHub Actions** CI to run tests on every PR
+- ✅ Use **OpenAPI or Zod** for API schema validation
+
+---
+
+## 📂 Folder Structure
+
+```
+
+.
+├── .husky/ # Git hooks
+├── cypress/ # Cypress E2E tests
+├── node_modules/ # Project dependencies
+├── public/ # Static public files
+├── src/ # Application source code
+│ ├── assets/ # Static assets (icons, images, etc.)
+│ ├── axios/ # Axios instance and configs
+│ ├── components/ # Reusable UI components (Modal, Table, Form)
+│ ├── queries/ # React Query hooks for data fetching
+│ ├── types/ # Shared TypeScript interfaces
+│ ├── validations/ # Yup validation schemas
+│ ├── App.tsx # Main app component
+│ ├── index.css # Styles
+│ ├── main.tsx # Vite entry point
+│ ├── store.ts # Zustand store for global state
+│ └── vite-env.d.ts # Vite environment typings
+├── .env # Environment variables
+├── .gitignore
+├── .prettierignore
+├── .prettierrc # Prettier config
+├── cypress.config.ts # Cypress configuration
+├── eslint.config.js # ESLint config
+├── index.html # HTML template
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── users.json # Static user data
+├── vite.config.ts # Vite configuration
+└── README.md # Project documentation
 ```
